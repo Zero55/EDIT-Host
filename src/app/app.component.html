@@ -1,4 +1,11 @@
 <h1>Welcome to {{ title }}!</h1>
+
+<button (click)="send('commsOnLine')">commsOnLine</button>
+<button (click)="send('heartbeat')">heartbeat</button>
+<button (click)="send('reportMeter')">reportMeter</button>
+<button (click)="send('reportEvent')">reportEvent</button>
+<button (click)="send('reportStatus')">reportStatus</button>
+
 <div *ngFor="let message of messages">
   {{ message }}
 </div>
