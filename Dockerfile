@@ -1,6 +1,6 @@
 FROM node:10-alpine
 
-RUN mkdir -p /usr/local/src/node_modules && chown -R node:node /usr/local/src/app/
+RUN mkdir -p /usr/local/src/node_modules && chown -R node:node ~/usr/local/src/app/
 
 WORKDIR /usr/local/src/app/
 
