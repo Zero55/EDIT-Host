@@ -1,0 +1,13 @@
+version: "2"
+services:
+  node:
+    image: "node:10"
+    user: "node"
+    working_dir: /usr/local/src/app
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/usr/local/src/app
+    expose:
+      - "8080", "8081"
+    command: "npm start"
